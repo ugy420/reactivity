@@ -11,7 +11,7 @@ function App() {
   return (
     <div className='main-div'>
       <div className='btn-div'>
-        <input type="button" className='btn-add' value="+" onClick={handleClick} />
+        <input type="button" className='btn btn-add' value="+" onClick={handleClick} />
       </div>
       <div className='lane-div'>
         <Lane text="r/lanetitle" />

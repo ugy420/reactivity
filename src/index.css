@@ -5,7 +5,6 @@
   justify-content: center;
   justify-items: center;
   margin:'auto';
-
 }
 
 .lane-div{
@@ -17,12 +16,35 @@
   border: none;
 }
 
-.btn-add{
+.btn{
   background-color: #FF7300;
+  border-style: none;
+  cursor: pointer;
+}
+
+.btn-add{
   width: 30px;
   height: 30px;
   border-radius: 15px;
-  border-style: none;
   font-size: 1.3rem;
-  cursor: pointer;
+}
+
+.modal-diag{
+  border-color: #FF7300;
+  display: flex;
+  border-radius: 15px;
+  flex-direction: column;
+}
+
+.modal-diag input{
+  width: 100%;
+  border-radius: 10px;
+  border-style: solid;
+  height: 2rem;
+}
+
+.spc-div{
+  margin-block: 0.3rem;
+  display: flex;
+  justify-content: center;
 }

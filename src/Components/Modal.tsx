@@ -1,6 +1,11 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-function Modal({open, close}){
+interface ModalProps {
+    open: boolean;
+    close: () => void;
+}
+
+function Modal({open, close}: ModalProps){
     const dialogRef = useRef<HTMLDialogElement|null>(null);
 
     const [subreddit, setSubreddit] = useState("");
@@ -17,10 +22,17 @@ function Modal({open, close}){
     
 
     return(
-        <dialog ref={dialogRef} className="modal-div" onClose={close} >
-                <label>Enter subreddit:</label>
+        <dialog ref={dialogRef} className="modal-diag" onClose={close} >
+            <div className="spc-div">
+
+                <label>Enter the name of the subreddit:</label>
+            </div>
+            <div className="spc-div">
                 <input type="text" value={subreddit} onChange={ e => setSubreddit(e.target.value)}/>
-                <input type="button" value="Add subreddit"/>
+            </div>
+            <div className="spc-div">
+                <input type="button" className="btn" value="Add subreddit"/>
+            </div>
         </dialog>  
     )
 }

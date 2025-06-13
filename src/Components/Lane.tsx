@@ -1,6 +1,8 @@
-import React from "react";
+interface LaneProps{
+    text:string
+}
 
-function Lane({text}){
+function Lane({text}:LaneProps){
     return(
         <>
             <div className="subreddit-div">
@@ -10,7 +12,6 @@ function Lane({text}){
                 <input type="text"></input>
             </div>
         </>
-
     );
 }
 
