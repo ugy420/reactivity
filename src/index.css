@@ -1,0 +1,28 @@
+.main-div{
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+  justify-items: center;
+  margin:'auto';
+
+}
+
+.lane-div{
+  background-color: #FF7300;
+}
+
+.lane-div input[type="text"]{
+  background-color: #FF7300;
+  border: none;
+}
+
+.btn-add{
+  background-color: #FF7300;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border-style: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
